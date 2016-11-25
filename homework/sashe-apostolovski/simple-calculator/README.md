@@ -7,4 +7,4 @@ Very simple calculator for basic arithmetic operations with two operands.
 - JS
 
 ### Try it:
-[Calculator](#)
+[Calculator](https://htmlpreview.github.io/?https://github.com/sashoa/sedc5-javascript-g3/blob/homework/simple-calculator/homework/sashe-apostolovski/simple-calculator/index.html)
