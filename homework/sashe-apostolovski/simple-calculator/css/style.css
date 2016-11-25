@@ -22,7 +22,6 @@ button:hover {
 }
 
 #result {
-  color: green;
   text-decoration: underline;
   font-size: 24px;
 }

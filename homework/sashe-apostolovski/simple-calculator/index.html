@@ -9,6 +9,7 @@
   <div class="container">
     <h1>Simple Calculator</h1>
     <p>Input the operands in their respective fields and choose operation, then Calculate.</p>
+      <form action="" method="">
     <input type="number" id="first-number">
     <select name="operation" id="operation">
       <option value="" selected disabled>Please select...</option>
@@ -18,9 +19,11 @@
       <option value="/">/</option>
     </select>
     <input type="number" id="second-number">
-    <button>Calculate</button>
+    <button type="submit" id="calculate">Calculate</button>
+    <button type="reset" id="reset">Reset</button>
+      </form>
     <div>
-      <span id="result">2345</span>
+      <span id="result"></span>
     </div>
   </div>
 
