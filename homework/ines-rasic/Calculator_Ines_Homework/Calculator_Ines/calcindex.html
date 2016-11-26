@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calc.css"
+</head>
+<body>
+    <h1>Calculator</h1>
+    <input type="number" name="first" id="first"/>
+    <select id="operator" >
+        <option value="" disabled selected> Choose </option>
+        <option value="add" id="add">+</option>
+        <option value="substract" id="substract">-</option>
+        <option value="multiply" id="multiply">*</option>
+        <option value="division" id="division">/</option>
+    </select>
+    <input type="number" name="second" id="second"/>=
+    
+   <span id="result"></span>
+    <br/>
+
+
+ <button id="calc" onclick="calculate()">Calculate</button>
+
+     <script src="calcscript.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown Calculator</title>
+</head>
+<body>
+<h1>Dropdown Calculator</h1>
+
+<p>Input numbers and choose an operation:</p>
+
+<p>
+<input type="number" name="number1" id="number1">
+
+<select name="operation" onchange="inputNumbers(value);" />
+	
+	<option value="choice" >operation</option>
+	<option value="addition" onclick="add()" />+</option>
+	<option value="subtraction" onclick="subtract()" />-</option>
+	<option value="multiplication" onclick="multiply()" />x</option>
+	<option value="division" onclick="divide()" />/</option>
+
+</select>
+
+<input type="number" name="number2" id="number2">
+</p>
+
+<script type="text/javascript" src="script.js"></script>
+
+	
+</body>
+</html>
