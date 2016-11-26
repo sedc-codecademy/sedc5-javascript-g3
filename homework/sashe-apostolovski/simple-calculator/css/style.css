@@ -1,0 +1,27 @@
+.container {
+  text-align: center;
+}
+
+.container > div {
+  margin-top: 50px;
+}
+
+p {
+  font-size: 20px;
+}
+
+button {
+  font-weight: bold;
+  border-width: 0px;
+  height: 20px;
+  background-color: darkorange;
+}
+
+button:hover {
+  background-color: orange;
+}
+
+#result {
+  text-decoration: underline;
+  font-size: 24px;
+}
