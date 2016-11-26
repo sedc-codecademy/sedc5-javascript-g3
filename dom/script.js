@@ -77,9 +77,9 @@ function addRow(){
     let table = document.getElementById("myTable");
     let row = document.createElement("tr");
     row.insertCell();
-    row.cells[0].innerHTML = "Added first cell";
+    row.cells[0].innerHTML = `#${table.rows.length}`;
     row.insertCell();
-    row.cells[1].innerHTML = "Added second cell";
+    row.cells[1].innerHTML = "Added cell";
     table.appendChild(row);
 }
 
