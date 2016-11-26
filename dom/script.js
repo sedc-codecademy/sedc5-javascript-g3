@@ -84,5 +84,15 @@ function addRow(){
 }
 
 function removeRow(){
-    alert("NOT IMPLEMENTED");
+    let table = document.getElementById("myTable");
+    if (table.children.length <= 1)
+        return;
+
+    let lastRow = table.lastChild;
+    lastRow.parentNode.removeChild(lastRow);
+
+    //table.deleteRow(table.rows.length - 1);
+    //table.removeChild(table.lastChild);
+    //table.lastChild.remove();
+    //console.log(table.lastChild);
 }
