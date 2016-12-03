@@ -12,4 +12,4 @@ With this "app" you can create a list of colors. Each item represents one CSS co
 - JS
 
 ### Try it:
-[Colors list clicker]()
+[Colors list clicker](https://github.com/sashoa/sedc5-javascript-g3/blob/homework/colors-list/homework/sashe-apostolovski/li-clicker/index.html)
