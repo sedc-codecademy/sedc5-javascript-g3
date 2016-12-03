@@ -1,0 +1,79 @@
+
+* {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 2px 3px 8px;
+}
+
+header h3 {
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+}
+main {
+  background-color: azure;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 10px;
+  border: 4px solid lime;
+  overflow: auto;
+}
+
+.input {
+  float: left;
+}
+
+input[type="text"] {
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+.details {
+  float: left;
+  margin-left: 50px;
+}
+
+.details p {
+  min-width: 210px;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+}
+
+.details p:nth-child(2) {
+  border: 2px solid crimson;
+  padding: 2px;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  margin: 5px 0;
+}
+
+li span {
+  padding: 1px;
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  background-color: lightgrey;
+  border: 2px solid rgb(50, 100, 255);
+  display: inline-block;
+  width: 85%;
+  /*padding: 2px;*/
+}
+li span:hover {
+  cursor: pointer;
+}
+
+#li-color {
+  border: 1px solid black;
+  display: inline-block;
+  width: 100%;
+  height: 16px;
+}
