@@ -42,7 +42,7 @@ function digitsToNumber(digits) {
 }
 
 
-function calculate(){
+function calculate (){
     var first = document.getElementById("first").valueAsNumber;
     var second = document.getElementById("second").valueAsNumber;
     var result = document.getElementById("result");
