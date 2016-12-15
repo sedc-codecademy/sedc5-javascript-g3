@@ -1,0 +1,25 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+}
+header{
+  margin: 50px;
+  text-align: center;
+}
+
+#converter {
+  text-align: center;
+}
+
+#resultContainer {
+  width: 650px;
+  margin: 50px auto;
+  font-weight: bold;
+}
+
+#resultContainer p{
+  background-color: #ddd;
+  border: 2px solid green;
+  padding: 5px;
+  font-size: 1.3em;
+}
