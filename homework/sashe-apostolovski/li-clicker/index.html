@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Li clicker</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Nunito|Open+Sans|Roboto|Source+Code+Pro" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <header>
+    <hgroup>
+      <h1>Homework</h1>
+      <h3>CSS Colors List</h3>
+    </hgroup>
+  </header>
+  <main>
+    <p>With this "app" you can create a list of colors. 
+       Each item represents one CSS color name. 
+       You can add and remove elements from the list. 
+       Click on a list item to see the color representation.</p>
+      <div class="input">
+        <label for="color-input">Input a valid CSS color name:</label>
+        <input type="text" id="color-input" placeholder="example: green" required>
+        <button id="btn-add">Add</button>
+        <ul id="color-list">
+        </ul>
+      </div>
+      <div class="details">
+        <p>Details:<br>
+        <span id="li-color"></span><br>
+        <span id="num-colors"></span>
+        </p>
+      </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
