@@ -7,4 +7,4 @@ Convert integer numbers to it's words equivalent.
 - JS
 
 ### Try it:
-[Calculator](#)
+[Calculator](https://htmlpreview.github.io/?https://github.com/sashoa/sedc5-javascript-g3/blob/homework/number-to-words/homework/sashe-apostolovski/number-to-words/index.html)
