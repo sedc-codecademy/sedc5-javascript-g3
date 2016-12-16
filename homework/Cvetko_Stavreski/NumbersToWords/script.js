@@ -12,7 +12,7 @@ function hundred(numArr){
 		};
 	};
 	if(numArr[1] === "1" && numArr[2] === "0"){
-		result += " " + "ten"
+		result += "ten"
 	} else if(numArr[1] === "1"){
 		for(let i = 0; i < teens.length; i++){
 			if(numArr[2] === teens[i][1]){
@@ -24,9 +24,9 @@ function hundred(numArr){
 			for(let i = 0; i < doubleDigit.length; i++){
 				if(numArr[1] === doubleDigit[i][1]){
 					if(numArr[2] === "0"){
-						result += " " + doubleDigit[i][0];
+						result += doubleDigit[i][0];
 					} else {
-						result += " " + doubleDigit[i][0] + "-";
+						result += doubleDigit[i][0] + "-";
 					};
 				};
 			};
@@ -42,50 +42,20 @@ function hundred(numArr){
 	return result;
 };
 
-function trillion(num){
+function bigNumber(num, extension){
 	var result = "";
 	if(num[0] === "0" && num[1] === "0" && num[2] === "0"){
 		result = "";
 	} else {
-	result = hundred(num) + " trillion";
+		result = hundred(num) + " " + extension + ", ";
 	};
 	return result;
 };
-
-function billion(num){
-	var result = "";
-	if(num[0] === "0" && num[1] === "0" && num[2] === "0"){
-		result = "";
-	} else {
-	result = hundred(num) + " billion";
-	};
-	return result;
-};
-
-function million(num){
-	var result = "";
-	if(num[0] === "0" && num[1] === "0" && num[2] === "0"){
-		result = "";
-	} else {
-	result = hundred(num) + " million";
-	};
-	return result;
-};
-
-function thousand(num){
-	var result = "";
-	if(num[0] === "0" && num[1] === "0" && num[2] === "0"){
-		result = "";
-	} else {
-	result = hundred(num) + " thousand";
-	};
-	return result;
-}
 
 function sayIt(num){
 	num = parseInt(num);
 	let numArr = [];
-	let billionResult = "", millionResult = "", thousandResult = "", hundredResult = "", negative = "";
+	let trillionResult = "", billionResult = "", millionResult = "", thousandResult = "", hundredResult = "", negative = "";
 	let result = "";
 	num = (""+num).split("");
 	for(let i = 0; i < num.length; i++){
@@ -110,26 +80,13 @@ function sayIt(num){
 	numThousands.push(numArr[9], numArr[10], numArr[11]);
 	numHundred.push(numArr[12], numArr[13], numArr[14])
 
-	numTrillion = trillion(numTrillion);
-	billionResult = billion(numBillion);
-	millionResult = million(numMillion);
-	thousandResult = thousand(numThousands);
+	trillionResult = bigNumber(numTrillion, "trillion");
+	billionResult = bigNumber(numBillion, "billion");
+	millionResult = bigNumber(numMillion, "million");
+	thousandResult = bigNumber(numThousands, "thousand");
 	hundredResult = hundred(numHundred);
 
-	if(numTrillion.length > 0 && (billionResult.length > 0 || millionResult.length > 0 || thousandResult.length > 0 || hundredResult.length > 0)){
-		numTrillion += ", ";
-	};
-	if(billionResult.length > 0 && (millionResult.length > 0 || thousandResult.length > 0 || hundredResult.length > 0)){
-		billionResult += ", ";
-	};
-	if(millionResult.length > 0 && (thousandResult.length > 0 || hundredResult.length > 0)){
-		millionResult += ", ";
-	};
-	if(thousandResult.length > 0 && hundredResult.length > 0){
-		thousandResult += ", ";
-	};
-
-	result = negative + numTrillion + billionResult + millionResult + thousandResult + hundredResult;
+	result = negative + trillionResult + billionResult + millionResult + thousandResult + hundredResult;
 
 	return result;
 };
@@ -145,6 +102,4 @@ function calculate(){
 		result = sayIt(inputNumber);
 		outputString.innerHTML = result;
 	};
-}
-
-
+};
